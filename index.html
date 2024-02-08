@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+    <!-- шапка -->
+    <header class="header" id="home">
+        <div class="container">
+            <!-- навигация -->
+            <div class="header-nav">
+                <a href="" class="logo">EXXUSIO</a>
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#todolist" class="nav-link">TodoList</a></li>
+                        <li class="nav-item"><a href="#wait" class="nav-link">...</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+
+            <!-- содержимое шапки -->
+            <div class="header-row">
+
+                <div class="header-content" data-aos="fade-up">
+                    <h1 class="header-heading">Yakushev Vladislav<br> <span>Student</span></h1>
+                    <p>Hello iTechArt! I'm a novice programmer from Belarus. I study at Polotsk State University.</p>
+                </div>
+
+                <div class="header-img" data-aos="fade-left">
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="./img/header/hero-mobile.png">
+                        <img src="./img/header/hero.png" alt="">
+                    </picture>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <!-- скилы -->
+    <skills class="skills" id="skills">
+        <div class="container">
+            <div class="skills-row">
+
+                <div class="skills-card" data-aos="fade-down">
+                    <img class="skills-card-img" src="./img/skills/knowledge.svg" alt="knowledge">
+                    <h3 class="skills-card-title">knowledge</h3>
+                    <p>C#, Unity, SQL, Python, JS, CSS, C++</p>
+                </div>
+
+                <div class="skills-card" data-aos="fade-down">
+                    <img class="skills-card-img" src="./img/skills/qualities.svg" alt="qualities">
+                    <h3 class="skills-card-title">qualities</h3>
+                    <p>Responsibility, Communication skills, Initiative, Assiduity, Perseverance, Ability to work in a team, Good concentration</p>
+                </div>
+
+                <div class="skills-card" data-aos="fade-down">
+                    <img class="skills-card-img" src="./img/skills/hobbies.svg" alt="hobbies">
+                    <h3 class="skills-card-title">hobbies</h3>
+                    <p>Sports, Video Games, Drawing, Guitar Playing, Dancing, Singing, Programming, Volleyball, Table Tennis</p>
+                </div>
+
+            </div>
+        </div>
+    </skills>
+
+    <!-- TODO List -->
+    <todolist class="todolist" id="todolist">
+        <div class="wrapper" data-aos="fade-left">
+            <div class="task-input">
+                <img src="./img/icons/bars-icon.svg" alt="icon">
+                <input type="text" placeholder="Add a new task">
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <span class="active" id="all">All</span>
+                    <span id="pending">Pending</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <button class="clear-btn">Clear All</button>
+            </div>
+            <ul class="task-box"></ul>
+        </div>
+    </todolist>
+
+    <!-- хм хм хм -->
+    <div class="wait" data-aos="fade-left" id="wait">
+        <p><br>Someday there will be something here :з<br><br><br></p>
+    </div>
+
+    <!-- контакты -->
+    <footer class="contacts" id="contact">
+        <div class="container">
+            <div class="contacts-title">
+                <h2 class="title">Contacts</h2>
+            </div>
+            <div class="contacts-content" data-aos="fade-down">
+                <p>Want to know more or just chat?<br> You are welcome!</p>
+            </div>
+            <div class="contacts-button" data-aos="fade-down">
+                <a href="https://t.me/exxusio" target="_blank" class="btn">Send message</a>
+            </div>
+            <div class="contacts-social" data-aos="zoom-in">
+                <a href="https://t.me/exxusio" target="_blank"><img src="./img/socials/teleg.svg" alt="Telegram"></a>
+                <a href="https://www.instagram.com/exxusio" target="_blank"><img src="./img/socials/inst.svg" alt="Instagram"></a>
+                <a href="https://vk.com/exxusio" target="_blank"><img src="./img/socials/vk.svg" alt="VK"></a>
+            </div>
+            <div class="contacts-footer" data-aos="fade-up">
+                <p>Like me on<br> Telegram, Instagram, VK</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/todolist.js"></script>
+</body>
+</html>
